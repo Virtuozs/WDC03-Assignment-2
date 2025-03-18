@@ -35,7 +35,7 @@ console.log(isEven(TEST_NUMBER));
 false
 ```
 
-### 2️⃣ `isPalindrome(str: string): string`
+### 2️⃣ `isPalindrome(source: string): string`
 Checks if a string reads the same forward and backward.
 
 #### How It Works:
@@ -56,7 +56,6 @@ Checks if a string reads the same forward and backward.
 ```typescript
 function  isPalindrome(source:  string):  string {
 	if(!/^[a-z0-9]+$/i.test(source)){
-
 		throw  new  Error("Input must contain only alphanumeric characters (A-Z, a-z, 0-9).");
 	}
 	const  reversedString  =  source.toLowerCase().split("").reverse().join("");
@@ -74,7 +73,7 @@ console.log(isPalindrome(TEST_PALINDROME));
 Palindrome
 ```
 
-### 3️⃣ `removeFirstOccurrence(str: string, subStr: string): string`
+### 3️⃣ `removeFirstOccurrenc(source: string, target: string): string`
 Removes the first occurrence of a substring from a string.
 
 #### How It Works:
@@ -120,7 +119,7 @@ F = \left(C \times \frac{9}{5} \right) + 32
 $$
 #### Parameters:
 
-- `value` _(number)_ – The temperature value to convert.
+- `temperature` _(number)_ – The temperature value to convert.
 
 #### Returns:
 
@@ -155,11 +154,11 @@ Converts between centimeters (cm) and kilometers (km).
 #### Parameters:
 
 - `value` _(number)_ – The temperature value to convert.
+- `unit` _(string)_ – The unit of the input value (`"cm"` or `"km"`).
 
 #### Returns:
 
--   `value` _(number)_ – The numeric value to convert.
--   `unit` _(string)_ – The unit of the input value (`"cm"` or `"km"`).
+- _(number)_ – The converted value.
 
 #### Example:
 ```typescript

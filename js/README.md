@@ -115,7 +115,7 @@ F = \left(C \times \frac{9}{5} \right) + 32
 $$
 #### Parameters:
 
-- `value` – The temperature value to convert.
+- `temperature` – The temperature value to convert.
 
 #### Returns:
 
